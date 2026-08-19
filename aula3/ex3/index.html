@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <label for="idade">Informe sua idade</label><br>
+        <input type="text" id="idade"><br><br>
+
+        <button id="botao">Enviar</button>
+        <p id="resultado"></p>
+    </form>
+
+    <script>
+        let idade = document.getElementById("idade");
+        let botao = document.getElementById("botao");
+        let resultado = document.getElementById("resultado");
+
+        botao.addEventListener("click", function (event) {
+            event.preventDefault();
+
+            let valorIdade = Number(idade.value);
+
+            if (valorIdade == 0 && valorIdade <= 12) {
+                resultado.innerText = "Usuário criança";
+            } else if (valorIdade >= 13 && valorIdade <= 17) {
+                resultado.innerText = "Usuário adolescente";
+            } else if (valorIdade >= 18 && valorIdade <= 59) {
+                resultado.innerText = "Usuário adulto";
+            } else if(valorIdade >= 60) {
+                resultado.innerText = "Usuário idoso";
+            }
+        });
+    </script>
+</body>
+
+</html>

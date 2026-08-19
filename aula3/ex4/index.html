@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label for="nota">Informe a nota do aluno:</label><br>
+        <input type="text" id="nota"><br><br>
+
+        <button id="botao">Enviar</button>
+        <p id="resultado"></p>
+    </form>
+
+    <script>
+        let nota = document.getElementById("nota");
+        let botao = document.getElementById("botao");
+        let resultado = document.getElementById("resultado");
+
+        botao.addEventListener("click", function (event) {
+            event.preventDefault();
+
+            let valorNota = Number(nota.value);
+
+            if (valorNota >= 7) {
+                resultado.innerText = "Aluno aprovado";
+            } else if(valorNota >= 5 && valorNota <= 6.9){
+                resultado.innerText = "Aluno de recuperação";
+            } else if (valorNota < 5){
+                resultado.innerText = "Aluno reprovado";
+            }
+        });
+    </script>
+</body>
+</html>
