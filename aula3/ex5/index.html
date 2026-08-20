@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label for="numero">Informe um Número</label>
+        <input type="text" id="numero"> <br><br>
+
+        <button id="botao">Enviar</button>
+        <p id="resultado"></p>
+    </form>
+
+    <script>
+        let numero = document.getElementById("numero");
+        let botao = document.getElementById("botao");
+        let resultado = document.getElementById("resultado");
+
+        botao.addEventListener("click", function (event) {
+            event.preventDefault(); //evuta de sumir
+
+            let valor = Number(numero.value);
+
+            if (valor % 2 === 0) {
+                resultado.innerText = "numero par";
+            } else{
+                resultado.innerText = "numero impar";
+                
+            }
+        });
+    </script>
+</body>
+</html>
