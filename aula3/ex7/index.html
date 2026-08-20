@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <label for="valor">Informe o valor da compra:</label><br>
+        <input type="text" id="valor"><br>
+        <button type="submit" id="botao">Enviar</button><br>
+        <p id="resultado"></p>
+    </form>
+
+    <script>
+        let valor = document.getElementById("valor");
+        let botao = document.getElementById("botao");
+        let resultado = document.getElementById("resultado");
+
+        botao.addEventListener("click", function (event) {
+            event.preventDefault();
+
+            let valorC = Number(valor.value);
+
+            if (valorC >= 100) {
+                let total = valorC * 0.9;
+                resultado.innerText = "Valor com desconto " + total;
+            } else {
+                resultado.innerText = "Valor sem desconto " + valorC;
+            }
+
+        });
+    </script>
+</body>
+
+</html>

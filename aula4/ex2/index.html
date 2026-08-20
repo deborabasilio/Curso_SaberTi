@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documento</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="cabecalho">
+        <h1>Cálculo de Salário Líquido Anual</h1>
+        <h4>13º Salário e Férias não devem constar no cálculo.</h4>
+    </div>
+
+    <div class="container">
+        <form id="form-meses">
+            <h3>Salários Brutos</h3>
+
+            <div class="linha-mes">
+                <div class="campo">
+                    <label for="jan">Janeiro</label>
+                    <input type="text" id="jan" placeholder="Digite o salário bruto de Janeiro">
+                </div>
+                <div class="campo">
+                    <label for="descJan">Percentual de desconto</label>
+                    <input type="text" id="descJan" placeholder="Digite a Porcentagem de Desconto">
+                </div>
+            </div>
+
+            <div class="linha-mes">
+                <div class="campo">
+                    <label for="fev">Fevereiro</label>
+                    <input type="text" id="fev" placeholder="Digite o salário bruto de Fevereiro">
+                </div>
+                <div class="campo">
+                    <label for="descFev">Percentual de desconto</label>
+                    <input type="text" id="descFev" placeholder="Digite a Porcentagem de Desconto">
+                </div>
+            </div>
+
+            <div class="linha-mes">
+                <div class="campo">
+                    <label for="mar">Março</label>
+                    <input type="text" id="mar" placeholder="Digite o salário bruto de Março">
+                </div>
+                <div class="campo">
+                    <label for="descMar">Percentual de desconto</label>
+                    <input type="text" id="descMar" placeholder="Digite a Porcentagem de Desconto">
+                </div>
+            </div>
+
+            <div class="linha-mes">
+                <div class="campo">
+                    <label for="abr">Abril</label>
+                    <input type="text" id="abr" placeholder="Digite o salário bruto de Abril">
+                </div>
+                <div class="campo">
+                    <label for="descAbr">Percentual de desconto</label>
+                    <input type="text" id="descAbr" placeholder="Digite a Porcentagem de Desconto">
+                </div>
+            </div>
+
+            <div class="linha-mes">
+                <div class="campo">
+                    <label for="mai">Maio</label>
+                    <input type="text" id="mai" placeholder="Digite o salário bruto de Maio">
+                </div>
+                <div class="campo">
+                    <label for="descMai">Percentual de desconto</label>
+                    <input type="text" id="descMai" placeholder="Digite a Porcentagem de Desconto">
+                </div>
+            </div>
+
+            <div class="linha-mes">
+                <div class="campo">
+                    <label for="jun">Junho</label>
+                    <input type="text" id="jun" placeholder="Digite o salário bruto de Junho">
+                </div>
+                <div class="campo">
+                    <label for="descJun">Percentual de desconto</label>
+                    <input type="text" id="descJun" placeholder="Digite a Porcentagem de Desconto">
+                </div>
+            </div>
+
+            <div class="linha-mes">
+                <div class="campo">
+                    <label for="jul">Julho</label>
+                    <input type="text" id="jul" placeholder="Digite o salário bruto de Julho">
+                </div>
+                <div class="campo">
+                    <label for="descJul">Percentual de desconto</label>
+                    <input type="text" id="descJul" placeholder="Digite a Porcentagem de Desconto">
+                </div>
+            </div>
+
+            <div class="linha-mes">
+                <div class="campo">
+                    <label for="ago">Agosto</label>
+                    <input type="text" id="ago" placeholder="Digite o salário bruto de Agosto">
+                </div>
+                <div class="campo">
+                    <label for="descAgo">Percentual de desconto</label>
+                    <input type="text" id="descAgo" placeholder="Digite a Porcentagem de Desconto">
+                </div>
+            </div>
+
+            <div class="linha-mes">
+                <div class="campo">
+                    <label for="set">Setembro</label>
+                    <input type="text" id="set" placeholder="Digite o salário bruto de Setembro">
+                </div>
+                <div class="campo">
+                    <label for="descSet">Percentual de desconto</label>
+                    <input type="text" id="descSet" placeholder="Digite a Porcentagem de Desconto">
+                </div>
+            </div>
+
+            <div class="linha-mes">
+                <div class="campo">
+                    <label for="out">Outubro</label>
+                    <input type="text" id="out" placeholder="Digite o salário bruto de Outubro">
+                </div>
+                <div class="campo">
+                    <label for="descOut">Percentual de desconto</label>
+                    <input type="text" id="descOut" placeholder="Digite a Porcentagem de Desconto">
+                </div>
+            </div>
+
+            <div class="linha-mes">
+                <div class="campo">
+                    <label for="nov">Novembro</label>
+                    <input type="text" id="nov" placeholder="Digite o salário bruto de Novembro">
+                </div>
+                <div class="campo">
+                    <label for="descNov">Percentual de desconto</label>
+                    <input type="text" id="descNov" placeholder="Digite a Porcentagem de Desconto">
+                </div>
+            </div>
+
+            <div class="linha-mes">
+                <div class="campo">
+                    <label for="dez">Dezembro</label>
+                    <input type="text" id="dez" placeholder="Digite o salário bruto de Dezembro">
+                </div>
+                <div class="campo">
+                    <label for="descDez">Percentual de desconto</label>
+                    <input type="text" id="descDez" placeholder="Digite a Porcentagem de Desconto">
+                </div>
+            </div>
+
+            <br>
+            <button type="submit" id="botao">Enviar</button>
+            <br><br>
+        </form>
+
+        <form id="form-res">
+            <h3>Salários Líquidos</h3>
+
+            <div class="linha-mes">
+                <div class="campo">
+                    <label for="res-jan">Janeiro</label>
+                    <input type="text" id="resJan" readonly>
+                </div>
+            </div>
+
+            <div class="linha-mes">
+                <div class="campo">
+                    <label for="res-fev">Fevereiro</label>
+                    <input type="text" id="resFev" readonly>
+                </div>
+            </div>
+
+            <div class="linha-mes">
+                <div class="campo">
+                    <label for="res-mar">Março</label>
+                    <input type="text" id="resMar" readonly>
+                </div>
+            </div>
+
+            <div class="linha-mes">
+                <div class="campo">
+                    <label for="res-abr">Abril</label>
+                    <input type="text" id="resAbr" readonly>
+                </div>
+            </div>
+
+            <div class="linha-mes">
+                <div class="campo">
+                    <label for="res-mai">Maio</label>
+                    <input type="text" id="resMai" readonly>
+                </div>
+            </div>
+
+            <div class="linha-mes">
+                <div class="campo">
+                    <label for="res-jun">Junho</label>
+                    <input type="text" id="resJun" readonly>
+                </div>
+            </div>
+
+            <div class="linha-mes">
+                <div class="campo">
+                    <label for="res-jul">Julho</label>
+                    <input type="text" id="resJul" readonly>
+                </div>
+            </div>
+
+            <div class="linha-mes">
+                <div class="campo">
+                    <label for="res-ago">Agosto</label>
+                    <input type="text" id="resAgo" readonly>
+                </div>
+            </div>
+
+            <div class="linha-mes">
+                <div class="campo">
+                    <label for="res-set">Setembro</label>
+                    <input type="text" id="resSet" readonly>
+                </div>
+            </div>
+
+            <div class="linha-mes">
+                <div class="campo">
+                    <label for="res-out">Outubro</label>
+                    <input type="text" id="resOut" readonly>
+                </div>
+            </div>
+
+            <div class="linha-mes">
+                <div class="campo">
+                    <label for="res-nov">Novembro</label>
+                    <input type="text" id="resNov" readonly>
+                </div>
+            </div>
+
+            <div class="linha-mes">
+                <div class="campo">
+                    <label for="res-dez">Dezembro</label>
+                    <input type="text" id="resDez" readonly>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
