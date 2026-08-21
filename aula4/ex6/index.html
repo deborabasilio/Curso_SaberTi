@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Calcular Custo Final - Carro Novo</h2>
+        <label for="custoFab">Custo de fábrica:</label>
+        <input type="number" id="custoFab" placeholder="Digite o Custo" step="any">
+
+        <label for="percDistribuidor">Percentual:</label>
+        <input type="number" id="percDistribuidor" placeholder="Digite o percentual" step="any">
+
+        <label for="evento">Tempo de duração de evento em segundos:</label>
+        <input type="number" id="evento" placeholder="Exemplo: 10000" step="any">
+
+        <button id="botao" onclick="calcular()">Calcular</button>
+        <h3 id="resultado"></h3>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
